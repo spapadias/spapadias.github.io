@@ -187,7 +187,7 @@
                                                         </div>
 														<h4 class="pubtitle">Space-Efficient Random Walks on Streaming Graphs (<strong>under revision</strong>)</h4>
                                                         <div class="pubauthor"> <strong>Serafeim Papadias</strong>, Zoi Kaoudi, Jorge Arnulfo Quiane Ruiz, Volker Markl</div>
-                                                        <div class="pubcite"><span class="label label-danger">Conference Paper</span> VLDB '23: Proc. of the Intl. Conf. on Very Large Databases, 2023.</div>
+                                                        <div class="pubcite"><span class="label label-danger">Conference Paper</span> VLDB '23: Proc. of the Intl. Conf. on Very Large Databases, 2023 </div>
                                                     </div>
 													<div class="pubdetails">
                                                         <h4>Abstract</h4>
@@ -228,7 +228,7 @@
                             </div>
 														<h4 class="pubtitle">In-Place Updates in Tree-Encoded Bitmaps</h4>
                               <div class="pubauthor">Marcellus Prama Saputra, Eleni Tzirita Zacharatou, <strong>Serafeim (Makis) Papadias</strong>, and Volker Markl</div>
-                              <div class="pubcite"><span class="label label-danger">Conference Paper</span>SSDBM '22: Proc. Intl. Conf. on Scientific and Statistical Database Management, 2022</div>
+                              <div class="pubcite"><span class="label label-danger">Conference Paper</span> SSDBM '22: Proc. Intl. Conf. on Scientific and Statistical Database Management, 2022 </div>
                             </div>
 
     											<div class="pubdetails">
@@ -261,52 +261,46 @@
 
 
 
-												<!-- <div class="item mix cpaper" data-year="2021" id="BTW">
+												<div class="item mix cpaper" data-year="2020" id="BTW">
                                                     <div class="pubmain">
 													    <div class="pubassets">
 
-                                                            <a href="#" class="pubcollapse tooltips" title="Abstract">
-                                                                <i class="fa fa-expand"></i>
-                                                            </a>
+                              <a href="#" class="pubcollapse tooltips" title="Abstract">
+                                  <i class="fa fa-expand"></i>
+                              </a>
 
-                                                            <a href="https://dl.gi.de/bitstream/handle/20.500.12116/35797/A3-4.pdf" class="tooltips" title="PDF" target="_blank">
-                                                                <i class="fa fa-file-pdf-o"></i>
-                                                            </a>
+                              <a href="publications/phd@vldb20-makis.pdf" class="tooltips" title="PDF" target="_blank">
+                                  <i class="fa fa-file-pdf-o"></i>
+                              </a>
 
-                                                        </div>
-														<h4 class="pubtitle">Towards Resilient Data Management for the Internet of Moving Things</h4>
-                                                        <div class="pubauthor">Elena Beatriz Ouro Paz, <strong>Serafeim (Makis) Papadias</strong>, and Volker Markl</div>
-                                                        <div class="pubcite"><span class="label label-danger">Conference Paper</span> BTW '21: Fachtagung für Datenbanksysteme für Business, Technologie und Web, 2021 </div>
-                                                    </div>
+                            </div>
+														<h4 class="pubtitle">Tunable Streaming Graph Embeddings at Scale</h4>
+                                <div class="pubauthor"><strong>Serafeim Papadias</strong></div>
+                                <div class="pubcite"><span class="label label-danger">Conference Paper</span> PhD Workshop @ VLDB '23: Proc. of the Intl. Conf. on Very Large Databases, 2023 </div>
+                            </div>
 													<div class="pubdetails">
-                                                        <h4>Abstract</h4>
-														<p> Mobile devices have become ubiquitous; smartphones, tablets and wearables are essential
-															commodities for many people. The ubiquity of mobile devices combined with their ever increasing
-															capabilities, open new possibilities for Internet-of-Things (IoT) applications where mobile devices
-															act as both data generators as well as processing nodes. However, deploying a stream processing
-															system (SPS) over mobile devices is particularly challenging as mobile devices change their position
-															within the network very frequently and are notoriously prone to transient disconnections. To deal
-															with faults arising from disconnections and mobility, existing fault tolerance strategies in SPS are
-															either checkpointing-based or replication-based. Checkpointing-based strategies are too heavyweight
-															for mobile devices, as they save and broadcast state periodically, even when there are no failures.
-															On the other hand, replication-based strategies cannot provide fault tolerance at the level of the data
-															source, as the data source itself cannot be always replicated. Finally, existing systems exclude mobile
-															devices from data processing upon a disconnection even when the duration of the disconnection is
-															very short, thus failing to exploit the computing capabilities of the offline devices. This paper proposes
-															a buffering-based reactive fault tolerance strategy to handle transient disconnections of mobile devices
-															that both generate and process data, even in cases where the devices move through the network during
-															the disconnection. The main components of our strategy are: (a) a circular buffer that stores the
-															data which are generated and processed locally during a device disconnection, (b) a query-aware
-															buffer replacement policy, and (c) a query restart process that ensures the correct forwarding of the
-															buffered data upon re-connection, taking into account the new network topology. We integrate our
-															fault tolerance strategy with NebulaStream, a novel stream processing system specifically designed for
-															the IoT. We evaluate our strategy using a custom benchmark based on real data, exhibiting reduction
-															in data loss and query latency compared to the baseline NebulaStream.
+                            <h4>Abstract</h4>
+														<p> An increasing number of real-world applications require machine learning tasks over large-scale streaming graphs, where
+                                nodes and edges are continuously being added or deleted.
+                                Graph embeddings have been widely used for solving such
+                                tasks by capturing the graph structure and features into a
+                                low-dimensional latent space. However, current approaches
+                                have one or more of the following disadvantages: (i) they
+                                are designed for either static or dynamic graphs and thus,
+                                need retraining after each graph change or periodically updating the embeddings after each snapshot arrival, (ii) they
+                                fail to scale to today’s size of graphs composed of billions
+                                of nodes, or (iii) yet the ones devised for streaming graphs
+                                perform redundant retraining computations by mandating
+                                continuous embedding updates even if the accuracy is not
+                                improved. The goal of this thesis is to overcome the abovementioned problems by devising tunable streaming methods
+                                that can scale to massive graphs. We envision an end-to-end
+                                ML streaming system that achieves that goal and provides
+                                users with abstractions to easily define their own streaming
+                                embedding algorithms
 														</p>
-                                                    </div>
-                                                </div>
-
-                                            </div> -->
+                                  </div>
+                              </div>
+                          </div>
 
 
 											<!-- <div class="content"><h3>2020</h3>
