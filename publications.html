@@ -169,7 +169,9 @@
 
 											<div class="content"><h3>2021</h3>
 
-												<div class="item mix cpaper" data-year="2021" id="EDBT">
+
+
+												<div class="item mix cpaper" data-year="2023" id="EDBT">
                                                     <div class="pubmain">
 													    <div class="pubassets">
 
@@ -183,9 +185,9 @@
 
 
                                                         </div>
-														<h4 class="pubtitle">Space-Efficient Random Walks on Streaming Graphs (<strong>to appear</strong>)</h4>
+														<h4 class="pubtitle">Space-Efficient Random Walks on Streaming Graphs (<strong>under revision</strong>)</h4>
                                                         <div class="pubauthor"> <strong>Serafeim Papadias</strong>, Zoi Kaoudi, Jorge Arnulfo Quiane Ruiz, Volker Markl</div>
-                                                        <div class="pubcite"><span class="label label-danger">Conference Paper</span> VLDB '23: Proc. of the International Conference on Very Large Databases (VLDB), 2023.</div>
+                                                        <div class="pubcite"><span class="label label-danger">Conference Paper</span> VLDB '23: Proc. of the Intl. Conf. on Very Large Databases, 2023.</div>
                                                     </div>
 													<div class="pubdetails">
                                                         <h4>Abstract</h4>
@@ -202,7 +204,7 @@
 
 
 
-												<!-- <div class="item mix cpaper" data-year="2021" id="CIDR">
+												<div class="item mix cpaper" data-year="2022" id="CIDR">
                                                     <div class="pubmain">
 													    <div class="pubassets">
 
@@ -210,50 +212,50 @@
                                                                 <i class="fa fa-expand"></i>
                                                             </a>
 
-															<a href="https://www.youtube.com/watch?v=P-iC3r57qLc" class="tooltips" title="Conference Video" target="_blank">
+															<!-- <a href="https://www.youtube.com/watch?v=P-iC3r57qLc" class="tooltips" title="Conference Video" target="_blank">
 																<i class="fa fa-film"></i>
-															</a>
+															</a> -->
 
 
-															<a href="slides/TziritaZacharatou_CIDR2021_slides.pdf" class="tooltips" title="Slides" target="_blank">
-                                                                <i class="fa fa-file-powerpoint-o"></i>
-                                                            </a>
+															<!-- <a href="slides/TziritaZacharatou_CIDR2021_slides.pdf" class="tooltips" title="Slides" target="_blank">
+                                  <i class="fa fa-file-powerpoint-o"></i>
+                              </a> -->
 
-                                                            <a href="publications/TziritaZacharatou_Cidr2021_paper19.pdf" class="tooltips" title="Local PDF" target="_blank">
-                                                                <i class="fa fa-file-pdf-o"></i>
-                                                            </a>
+                              <a href="publications/ssdbm22-marcellus.pdf" class="tooltips" title="Local PDF" target="_blank">
+                                  <i class="fa fa-file-pdf-o"></i>
+                              </a>
 
-                                                        </div>
-														<h4 class="pubtitle">The Case for Distance-Bounded Spatial Approximations</h4>
-                                                        <div class="pubauthor"><strong>Serafeim (Makis) Papadias</strong>, Andreas Kipf, Ibrahim Sabek, Varun Pandey, Harish Doraiswamy, and Volker Markl</div>
-                                                        <div class="pubcite"><span class="label label-danger">Conference Paper</span> CIDR '21: Proc. Intl. Conf. on Innovative Data Systems Research, 2021 </div>
-                                                    </div>
-													<div class="pubdetails">
+                            </div>
+														<h4 class="pubtitle">In-Place Updates in Tree-Encoded Bitmaps</h4>
+                              <div class="pubauthor">Marcellus Prama Saputra, Eleni Tzirita Zacharatou, <strong>Serafeim (Makis) Papadias</strong>, and Volker Markl</div>
+                              <div class="pubcite"><span class="label label-danger">Conference Paper</span>SSDBM '22: Proc. Intl. Conf. on Scientific and Statistical Database Management, 2022</div>
+                            </div>
+
+    											<div class="pubdetails">
                                                         <h4>Abstract</h4>
-														<p> Spatial approximations have been traditionally used in spatial databases
-															to accelerate the processing of complex geometric operations.
-															However, approximations are typically only used in a first filtering
-															step to determine a set of candidate spatial objects that may
-															fulfill the query condition. To provide accurate results, the exact
-															geometries of the candidate objects are tested against the query
-															condition, which is typically an expensive operation. Nevertheless,
-															many emerging applications (e.g., visualization tools) require interactive
-															responses, while only needing approximate results. Besides,
-															real-world geospatial data is inherently imprecise, which makes
-															exact data processing unnecessary. Given the uncertainty associated
-															with spatial data and the relaxed precision requirements of
-															many applications, this vision paper advocates for approximate
-															spatial data processing techniques that omit exact geometric tests
-															and provide final answers solely on the basis of fine-grained approximations.
-															Thanks to recent hardware advances, this vision can be
-															realized today. Furthermore, our approximate techniques employ a
-															distance-based error bound, i.e., a bound on the maximum spatial
-															distance between false or missing and exact results which is crucial
-															for meaningful analyses. This bound allows to control the precision
-															of the approximation and trade accuracy for performance.
+														<p> The Tree-Encoded Bitmap (TEB) is a tree-based bitmap compression
+                                scheme that maps runs in a bitmap to leaf nodes in a binary tree.
+                                Currently, TEBs perform updates using an auxiliary differential
+                                data structure. However, consulting this additional data structure at
+                                every read introduces both memory and read overheads. To mitigate
+                                the shortcomings of differential updates, we propose algorithms
+                                to update TEBs in place. To that end, we classify the updates that
+                                can occur in a TEB into two types: run-forming and run-breaking.
+                                Run-forming updates correspond to leaf nodes at the lowest level
+                                of the binary tree. All other updates are run-breaking. Each type of
+                                update requires different handling. Through experimentation with
+                                synthetic data, we determined that in-place run-forming updates are
+                                2-3× faster than differential updates, while run-breaking updates
+                                cannot be efficiently performed in place. Therefore, we propose a
+                                hybrid solution that performs run-forming updates in place and
+                                stores run-breaking updates in a differential data structure. Our
+                                experiments with synthetic data show that our hybrid solution
+                                performs updates faster than the differential approach. For example,
+                                for a workload where 20% of the updates are run forming, our hybrid
+                                solution is 69% faster on average.
 														</p>
                                                     </div>
-                                                </div> -->
+                                                </div>
 
 
 
