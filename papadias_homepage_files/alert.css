@@ -1,0 +1,13 @@
+.news h3 {
+    margin: 0px 0px 0px 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: rgb(155, 15, 15);
+    text-align: center;
+}
+
+.news a {
+    color: rgb(155, 15, 15);
+    font-style: italic;
+}
+

@@ -1,2 +1,3 @@
-# spapadias.github.io
-Serafeim (Makis) Papadias' Website
+# Personal Website
+
+https://spapadias.github.io
