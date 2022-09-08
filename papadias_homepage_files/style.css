@@ -985,7 +985,8 @@ ul.timeline li .data .text {
 /* research
  **************************************************/
  .research .pageheader{
-	background-image: url(../img/research_painting.jpg);
+	/* background-image: url(../img/research_painting.jpg); */
+	background-image: url(../img/berlin_background.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 /*	background-position: center center;*/
