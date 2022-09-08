@@ -177,7 +177,8 @@
 
 								<div class="row">
                                     <!-- <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1"> -->
-                                    <div class="col-sm-12 col-md-12">
+
+                                    <!-- <div class="col-sm-12 col-md-12">
 
                                     <h3 class="strong-title">Mobility-Aware Data Processing [BTW'21, VLIoT'20]</h3>
 									<p style="text-align:justify">
@@ -187,12 +188,46 @@
 									Our strategy uses a circular buffer to store the data generated during the disconnection.
 									Furthermore, it ensures the correct forwarding of the buffered data upon re-connection, considering changes in the query execution plan caused by mobility.
 									</p>
-									</div>
+									</div> -->
+
+                  <div class="col-sm-12 col-md-12">
+
+                  <h3 class="strong-title">Graph Stream Processing [PhD@VLDB'20, VLDB'23]</h3>
+<p style="text-align:justify">
+We designed <a href="https://github.com/spapadias/wharf">Wharf</a>, a system that efficiently stores and updates random walks on streaming graphs.
+Wharf avoids a potential size explosion by maintaining a compressed, high-throughput, and low-latency data structure.
+It achieves (i) the succinct representation by coupling compressed purely functional binary trees and pairing functions for storing the walks,
+and (ii) efficient walk updates by effectively pruning the walk search space. %as well as performing bulk updates.
+I am particularly interested in the impact of the graph stream data processing, as graph can model data of pretty much any real world scenario.
+</p>
+
+<p>Here, you may find my presentation from the online VLDB 2020 (such an unfortunate event that we missed Tokyo!)</p>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=kFx4yKWFY5E&t=5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
                                 </div>
 
                                 <div class="row">
                                     <!-- <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1"> -->
-                                    <div class="col-sm-12 col-md-12">
+
+                                                      <div class="col-sm-12 col-md-12">
+
+                  <h3 class="strong-title">Worst-Case Optimal Data Stream Joins [EDBT'19]</h3>
+<p style="text-align:justify">
+Streaming join is an essential operation in many real-time applications as, nowadays, more and more data are becoming inherently streaming in nature.
+A lot of research has been devoted to the study of distributed streaming join algorithms.
+However, existing solutions rely on heuristics and cannot handle data skew optimally.
+On non-streaming, static data, the HyperCube algorithm ensures a balanced load across all processors in an optimal way.
+In this work, we extended this algorithm to the streaming setting, which is <a href="publications/edbt19-yuan.pdf">worst-case optimal streaming join algorithm</a> and can adapt the
+HyperCube configuration depending on the current data distribution.
+We believe this is a fruitful direction and more can be done to ensure provable load-balanced and worst-case optimal execution.
+</p>
+
+</p>
+</div>
+
+                                    <!-- <div class="col-sm-12 col-md-12">
 
 									<p></p>
                                     <h3 class="strong-title">Accelerating Spatial Analytics [EDBT'21, CIDR'21, EDBT'20, SIGMOD'18, VLDB'18]</h3>
@@ -238,26 +273,7 @@
 									</p>
 									<iframe width="560" height="315" src="https://www.youtube.com/embed/P-iC3r57qLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-									<!--Spatial aggregation
-									queries partition and summarize point data over different regions. Enabling fast
-									response times to such queries is challenging for several reasons. First, they comprise
-									computationally-intensive point-in-polygon tests that require time linear with respect
-									to the size of the polygons. Real-world polygonal regions have complex shapes, often
-									consisting of hundreds of vertices. This problem is compounded by the fact that data
-									sets can have hundreds of millions to several billion points. Finally, data cube-based
-									structures which are used to maintain aggregate values, require costly pre-processing
-									and can incur prohibitively high memory overhead, while, more importantly, they do
-									not support queries over arbitrary polygonal regions. </p>
-                                    <p>
-                                    To address these challenges,
-									we introduced Raster Join, a rasterization-based spatial aggregation technique that
-									leverages modern graphics hardware to support interactive response times to ad-hoc
-									aggregation queries over arbitrary polygons.
-                                    As part of the driver provided by the hardware vendors, rasterization is optimized to make use of the underlying architecture and maximize the occupancy of the GPU.
-                                    Raster Join processes queries on-the-fly, which allows taking into account dynamic updates to query parameters without requiring any memory-intensive pre-computation
-									</p>-->
-
-									</div>
+									</div> -->
 
                                 </div>
 
@@ -266,7 +282,8 @@
 
                                 <div class="row">
                                     <!-- <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1"> -->
-                                    <div class="col-sm-12 col-md-12">
+
+                                    <!-- <div class="col-sm-12 col-md-12">
 
 									<p></p>
                                     <h3 class="strong-title">Approximating Spatial Data [ICDE'18]</h3>
@@ -280,21 +297,33 @@
 									We proposed strategies for generating these points based on Pareto optimality.
 									Existing indexes only require a supplemental compact data structure and minor modifications to the construction, query, and update algorithms to work with CBBs.
 									We showed that CBBs eliminate unnecessary recursions in dead space, which results in improved query performance.
-									<!-- Spatial data processing techniques rely heavily on
-									approximating groups of spatial objects by their minimum bounding box (MBB).
-									However, MBBs often enclose significant “dead space”, fragments of bounded area
-									that contain no actual objects. We augment MBBs with few auxiliary
-									points that eliminate dead space around the corners of the MBB. We propose
-									strategies for generating these points based on Pareto optimality, and demonstrate
-									that our proposal can be plugged into any R-tree variant with a small auxiliary data
-									structure and minor modifications to the construction, query, and update algorithms.-->
+
 									</p>
 
-									</div>
-                                </div>
+									</div> -->
 
-                                <div class="row">
-                                    <!-- <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1"> -->
+                  <div class="col-sm-12 col-md-12">
+
+                  <h3 class="strong-title">Streaming Spatiotemporal Data Management [SSTD'19]</h3>
+<p style="text-align:justify">
+Together with <a href="https://www.imsi.athenarc.gr/en/people/member/76" target="_blank">Kostas</a>, we introduced a <a href="publications/sstd19-patroumpas.pdf" target="_blank">load shedding framework</a> for online monitoring of moving objects,
+which takes into account their evolving trajectories and copes smoothly with fluctuating demands of multiple continuous queries for limited system resources.
+This centralized scheme accepts streaming positional updates from numerous objects, but it only examines recent trajectory segments with expectedly higher
+utility in query evaluation, shedding the rest as immaterial.
+We focus on adaptive processing under extreme load conditions, opting to retain salient trajectory segments and possibly sacrifice smaller,
+frequently observed paths in favor of longer, distinctive routes.
+We propose heuristics for incremental query evaluation in order to provide up-to-date traffic analytics using windows
+that abstract particular regions and time intervals of interest.
+<!-- Finally, we conduct a comprehensive experimental study to validate our approach, demonstrating its benefits in result accuracy and efficiency
+for almost real-time response to trajectory-based aggregates. -->
+</p>
+
+</p>
+</div>
+
+                  </div>
+
+                                <!-- <div class="row">
                                     <div class="col-sm-12 col-md-12">
 
 									<p></p>
@@ -309,23 +338,14 @@
 									Our approach, Space Odyssey, minimizes the amount of data that needs to be organized and optimizes access to data sets frequently queried together, thereby decreasing data-to-query time.
 
 
-									<!-- With the abundance of data sources containing
-									complementary information about a spatial region, there is the need to issue a
-									spatial range query on multiple data sets simultaneously. Nevertheless, existing
-									indexes do not provide adequate support for querying multiple data sets while
-									returning a separate answer for each one of them. To address
-									the challenge of efficiently querying a combination of data sets that are arbitrarily
-									chosen from hundreds of candidate data sets, we developed Space
-									Odyssey, an incremental indexing approach that continuously optimizes access to
-									data sets frequently queried together, and STITCH, a novel index structure for the
-									scalable execution of spatial range queries on multiple data sets.-->
 									</p>
 
 									</div>
-                                </div>
+                                </div> -->
 
-                                <div class="row">
-                                    <!-- <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1"> -->
+
+
+                                <!-- <div class="row">
                                     <div class="col-sm-12 col-md-12">
 
 									<p></p>
@@ -340,14 +360,11 @@
 									RUBIK encodes time series values with bitmaps and compresses the bitmaps with a quadtree, effectively exploiting similarities within and across time series.
 									More importantly, RUBIK allows executing time-bound threshold queries directly on the compressed representation, thereby achieving both space- and time-efficiency.
 
-									<!-- We developed a compressed
-									time series index, RUBIK, that encodes time series values as bitmaps and applies
-									Quadtree-based decomposition to enable searching the bitmaps using both value
-									and time constraints.-->
 									</p>
 
 									</div>
-                                </div>
+                                </div> -->
+
                             </div>
                         </div>
 
