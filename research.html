@@ -166,32 +166,7 @@
                         <div class="section color-2">
                             <div class="section-container">
 
-
-
-                                 <!--<h2 class="strong-title">Current and Past Work</h2>
-                                <p>
-                                The goal of my PhD thesis was to bridge the gap between the requirements of spatial and temporal data
-                                exploration and the capabilities of existing data management systems. To that end, I focused on
-                                query processing techniques and access methods, on which the performance of data management
-                                systems depends, and revisited their design to eliminate bottlenecks that oppose the interactivity
-                                and scalability requirements of exploratory applications.
-								Specifically, I developed spatial query operators that leverage GPU rasterization, lightweight geometric object approximations with improved precision, and workload-aware access methods.
-								</p>-->
-
 								<div class="row">
-                                    <!-- <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1"> -->
-
-                                    <!-- <div class="col-sm-12 col-md-12">
-
-                                    <h3 class="strong-title">Mobility-Aware Data Processing [BTW'21, VLIoT'20]</h3>
-									<p style="text-align:justify">
-									I contributed to the design of <a href="https://www.nebula.stream/">NebulaStream</a>, an end-to-end data management system for the IoT.
-									I am particularly interested in the impact of the mobility of IoT devices on data processing.
-                                    We introduced a fault tolerance strategy for mobile devices to handle their transient disconnections.
-									Our strategy uses a circular buffer to store the data generated during the disconnection.
-									Furthermore, it ensures the correct forwarding of the buffered data upon re-connection, considering changes in the query execution plan caused by mobility.
-									</p>
-									</div> -->
 
                   <div class="col-sm-12 col-md-12">
 
@@ -208,8 +183,31 @@ I am particularly interested in the impact of the graph stream data processing, 
 <iframe width="560" height="315" src="https://youtu.be/kFx4yKWFY5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+  </div>
 
-                                </div>
+
+  <div class="row">
+
+    <div class="col-sm-12 col-md-12">
+
+    <h3 class="strong-title">In-Place Updates in Tree-Encoded Bitmaps [SSDBM'22]</h3>
+<p style="text-align:justify">
+The Tree-Encoded Bitmap (TEB) is a tree-based bitmap compression scheme that maps runs in a bitmap to leaf nodes in a binary tree.
+Currently, TEBs perform updates using an auxiliary differential data structure.
+However, consulting this additional data structure at every read introduces both memory and read overheads.
+To mitigate the shortcomings of differential updates, we propose algorithms to update TEBs in place.
+To that end, we classify the updates that can occur in a TEB into two types: run-forming and run-breaking.
+Run-forming updates correspond to leaf nodes at the lowest level of the binary tree. All other updates are run-breaking.
+Each type of update requires different handling. Through experimentation with synthetic data, we determined that in-place run-forming updates
+are 2-3× faster than differential updates, while run-breaking updates cannot be efficiently performed in place.
+Therefore, we propose <a href="https://github.com/marcellus-saputra/Thuja">Thuja</a>, a hybrid solution that performs run-forming updates in place
+and stores run-breaking updates in a differential data structure.
+<!-- Our experiments with synthetic data show that our hybrid solution performs updates faster than the differential approach. For example, for a workload where 20% of the
+updates are run forming, our hybrid solution is 69% faster on average. -->
+</p>
+</div>
+
+</div>
 
                                 <div class="row">
                                     <!-- <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1"> -->
