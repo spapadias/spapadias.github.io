@@ -965,7 +965,7 @@ ul.timeline li .data .text {
 /* home
  **************************************************/
  .home .pageheader{
-	background-image: url(../img/berlin_background.jpg);
+	background-image: url(../img/berlin_background_11.jpg);
 	/* background-image: url(../img/spapadias_wide_mirror_33zon.jpg); */
 	/* background-image: url(../img/spapadias_beach_guitar.jpg); */
 	/* background-image: url(../img/spapadias_beach_guitar_22zon.jpg); */
@@ -986,7 +986,7 @@ ul.timeline li .data .text {
  **************************************************/
  .research .pageheader{
 	/* background-image: url(../img/research_painting.jpg); */
-	background-image: url(../img/berlin_background.jpg);
+	background-image: url(../img/berlin_background_22.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 /*	background-position: center center;*/
@@ -1003,7 +1003,7 @@ ul.timeline li .data .text {
 /* publications
  **************************************************/
  .publications .pageheader{
-	background-image: url(../img/research_painting.jpg);
+	background-image: url(../img/berlin_background_33.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 /*	background-position: center center;*/
@@ -1105,7 +1105,7 @@ ul.timeline li .data .text {
  *************************************/
 
 #classes .pageheader{
-	background-image: url(../img/teaching.jpg);
+	background-image: url(../img/berlin_background_44.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -1308,7 +1308,7 @@ ul.grid li a,ul.grid li img {
 /* research
  **************************************************/
 #research .pageheader{
-	background-image: url(../img/research.jpg);
+	background-image: url(../img/berlin_background_55.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -1323,7 +1323,7 @@ ul.grid li a,ul.grid li img {
 /* projects
  **************************************************/
 #projects .pageheader{
-	background-image: url(../img/projects.jpg);
+	background-image: url(../img/berlin_background_66.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -1338,7 +1338,7 @@ ul.grid li a,ul.grid li img {
 /* contact
  **************************************************/
 #contact .pageheader{
-	background-image: url(../img/contact.jpg);
+	background-image: url(../img/berlin_background_77.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
