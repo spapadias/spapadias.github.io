@@ -971,8 +971,8 @@ ul.timeline li .data .text {
 	/* background-image: url(../img/spapadias_beach_guitar_22zon.jpg); */
 	background-repeat: no-repeat;
 	background-size: cover;
-/*	background-position: center center;*/
-	background-position: right top;
+	background-position: center center;
+	/* background-position: right top; */
 	padding: 20px 10%;
 }
 .home .pageheader .title{
@@ -989,8 +989,8 @@ ul.timeline li .data .text {
 	background-image: url(../img/berlin_background.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-/*	background-position: center center;*/
-	background-position: right top;
+	background-position: center center;
+	/* background-position: right top; */
 	padding: 20px 10%;
 }
 .research .pageheader .title{
@@ -1006,8 +1006,8 @@ ul.timeline li .data .text {
 	background-image: url(../img/berlin_background.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-/*	background-position: center center;*/
-	background-position: right top;
+	background-position: center center;
+	/* background-position: right top; */
 	padding: 20px 10%;
 }
 
