@@ -87,7 +87,8 @@
         <script>
         function toggleMemoryText() {
             var memoryText = document.getElementById("memory-text");
-            if (memoryText.style.display === "none") {
+            // if (memoryText.style.display === "none") {
+            if (memoryText.style.display !== "block") {
                 memoryText.style.display = "block";
             } else {
                 memoryText.style.display = "none";
